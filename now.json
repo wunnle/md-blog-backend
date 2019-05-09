@@ -12,6 +12,14 @@
       "dest": "/routes"
     },
     {
+      "src": "/getAllPosts",
+      "dest": "/routes/getAllPosts"
+    },
+    {
+      "src": "/getPost/(.*)",
+      "dest": "/routes/getPost/index.js?id=$1"
+    },
+    {
       "src": "/addPost",
       "dest": "/routes/addPost"
     }
